@@ -1,6 +1,42 @@
 <html>
-<head></head>
-<body>
-<h1>Its a Work in Progress</h1>
-</body>
+<head>
+        <style>
+            .dot {
+                height: 25px;
+                width: 25px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            h1 {
+                position: relative;
+                left:50%;
+                top:50%;
+            }
+            #dot1{
+                position: relative;
+                animation-name: test;
+                
+                animation-iteration-count: infinite;
+                animation-duration:1s;
+                animation-timing-function: ease;
+            }
+            @keyframes test {
+                0%   {background-color:rgb(248, 83, 83); left:0px; top:0px;}
+  25%  {background-color:rgb(252, 252, 112);  top:-10px;}
+  50%  {background-color:rgb(106, 106, 206);  top:-0px;}
+  75%  {background-color:rgb(75, 141, 75); top:-5px;}
+  100% {background-color:rgb(248, 83, 83);  top:0px;}
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>
+            <span class="dot" id="dot1"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </h1>
+    </body>
 </html>
