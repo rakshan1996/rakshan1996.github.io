@@ -8,35 +8,57 @@
                 border-radius: 50%;
                 display: inline-block;
             }
-            h1 {
+            div{
                 position: relative;
-                left:50%;
+                left:40%;
                 top:50%;
             }
             #dot1{
                 position: relative;
                 animation-name: test;
-                
                 animation-iteration-count: infinite;
                 animation-duration:1s;
                 animation-timing-function: ease;
             }
+            #dot2{
+                position: relative;
+                animation-name: test;
+                animation-iteration-count: infinite;
+                animation-duration:1s;
+                animation-delay: 0.25s;
+                animation-timing-function: ease;
+            }
+            #dot3{
+                position: relative;
+                animation-name: test;
+                animation-iteration-count: infinite;
+                animation-duration:1s;
+                animation-timing-function: ease;
+                animation-delay: 0.50s;
+            }
+            #dot4{
+                position: relative;
+                animation-name: test;
+                animation-iteration-count: infinite;
+                animation-duration:1s;
+                animation-timing-function: ease;
+                animation-delay:0.75s ;
+            }
             @keyframes test {
-                0%   {background-color:rgb(248, 83, 83); left:0px; top:0px;}
-  25%  {background-color:rgb(252, 252, 112);  top:-10px;}
-  50%  {background-color:rgb(106, 106, 206);  top:-0px;}
-  75%  {background-color:rgb(75, 141, 75); top:-5px;}
-  100% {background-color:rgb(248, 83, 83);  top:0px;}
+                0%   {background-color:rgb(255, 62, 48); left:0px; top:0px;}
+                25%  {background-color:rgb(247, 181, 41);  top:-10px;}
+                50%  {background-color:rgb(23, 107, 239);  top:-5px;}
+                75%  {background-color:rgb(23, 156, 82); top:-2.5px;}
+                100% {background-color:rgb(255, 62, 48);  top:0px;}
             }
         </style>
     </head>
     <body>
-
-        <h1>
+        <div>
             <span class="dot" id="dot1"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </h1>
+            <span class="dot" id="dot2"></span>
+            <span class="dot" id="dot3"></span>
+            <span class="dot" id="dot4"></span>
+        </div>
     </body>
 </html>
