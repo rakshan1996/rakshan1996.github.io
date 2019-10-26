@@ -1,3 +1,6 @@
+body{
+    background: #000;
+}
 .dot{
     height: 30px;
     width: 30px;
@@ -16,6 +19,8 @@ div{
     animation-iteration-count: infinite;
     animation-duration:1s;
     animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-fill-mode: both;
 }
 #dot2{
     position: relative;
@@ -24,7 +29,7 @@ div{
     animation-duration:1s;
     animation-delay: 0.25s;
     animation-timing-function: ease;
-    transform:rotate3d(0,0,200,40deg)
+    animation-direction: alternate;
 }
 #dot3{
     position: relative;
@@ -33,6 +38,7 @@ div{
     animation-duration:1s;
     animation-timing-function: ease;
     animation-delay: 0.50s;
+    animation-direction: alternate;
 }
 #dot4{
     position: relative;
@@ -41,10 +47,11 @@ div{
     animation-duration:1s;
     animation-timing-function: ease;
     animation-delay:0.75s ;
+    animation-direction: alternate;
 }
 @keyframes test {
-    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: rotate3d(1,1,1,180deg);}
-    25%  {background-color:rgb(247, 181, 41);  top:-10px;}
+    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: translateY(200px) rotate3d(1,1,1,180deg); }
+    25%  {background-color:rgb(247, 181, 41);  top:-10px; }
     50%  {background-color:rgb(23, 107, 239);  top:-5px;}
     75%  {background-color:rgb(23, 156, 82); top:-2.5px;}
     100% {background-color:rgb(255, 62, 48);  top:0px;}
