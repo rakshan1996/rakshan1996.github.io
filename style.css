@@ -2,16 +2,23 @@ body{
     background: #000;
 }
 .dot{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     display: inline-block;
     background-color: #bbb;
 }
 div{
+    color: white;
     position: relative;
-    left:50%;
     top:50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+div{
+    text-align: center;
+    margin: 10px 0px;
 }
 #dot1{
     position: relative;
@@ -50,7 +57,7 @@ div{
     animation-direction: alternate;
 }
 @keyframes test {
-    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: translateY(200px) rotate3d(1,1,1,180deg); }
+    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform:rotate3d(1,1,1,180deg); }
     25%  {background-color:rgb(247, 181, 41);  top:-10px; }
     50%  {background-color:rgb(23, 107, 239);  top:-5px;}
     75%  {background-color:rgb(23, 156, 82); top:-2.5px;}
