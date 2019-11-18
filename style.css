@@ -1,6 +1,7 @@
 body{
-    background: #000;
+    /* background: #000; */
 }
+
 .dot{
     height: 30px;
     width: 30px;
@@ -8,10 +9,21 @@ body{
     display: inline-block;
     background-color: #bbb;
 }
-div{
-    position: relative;
+h1{
     left:50%;
-    top:50%;
+    background-color: #bbb;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+div{
+    /* position: relative;
+    left:50%;
+    top:50%; */
+    position:static;
+    height: 100vh;
+    width: 100vw;
+    margin:0 auto;
 }
 #dot1{
     position: relative;
@@ -50,7 +62,7 @@ div{
     animation-direction: alternate;
 }
 @keyframes test {
-    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: translateY(200px) rotate3d(1,1,1,180deg); }
+    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: rotate3d(1,1,1,180deg); }
     25%  {background-color:rgb(247, 181, 41);  top:-10px; }
     50%  {background-color:rgb(23, 107, 239);  top:-5px;}
     75%  {background-color:rgb(23, 156, 82); top:-2.5px;}
