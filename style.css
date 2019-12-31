@@ -6,6 +6,10 @@ body{
    overflow: hidden;
 }
 
+.actionText{
+    text-align: center;
+    color: ghostwhite;
+}
 .profile{
     width: 300px;
     height: 300px;
@@ -25,11 +29,17 @@ body{
 
 }
 .rightFlip{
-    animation-name: test;
+    animation-name: rightFlip;
+    animation-duration: 5s;
+    animation-fill-mode: forwards
+}
+.leftFlip{
+    animation-name: leftFlip;
     animation-duration: 3s;
+    animation-fill-mode: forwards
 }
 
-@keyframes test{
-    from{transform: rotateY(0deg)}
-    to{transform:rotateY(var(--rotationDeg))}
+@keyframes rightFlip{
+    from{transform:rotateY(var(--rotationDeg))}
+    to{transform:rotateY(0deg);content: url(./2020.jpg)}
 }

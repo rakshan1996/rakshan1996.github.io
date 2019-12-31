@@ -2,13 +2,21 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="./index.js"></script>
+        <link rel="stylesheet" type="text/css" href="firework.css">
     </head>
     <body>
+            <div class="pyro">
+                    <div id="before"></div>
+                    <div id="after"></div>
+                  </div>
         <div class="img-profile" >
             <img class="profile" id="profile" usemap="#flipMap" src="./2019.jpg">
             <map name="flipMap">
                 <area shape="circle" coords="225,150,75" onclick="rightFlip()">
+                <area shape="circle" coords="75,150,75" onclick="rightFlip()">
             </map>
+            
+        <h3 class="actionText" id="instructions">Tap the Image</h3>
         </div>
     </body>
 </html>
