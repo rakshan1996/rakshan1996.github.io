@@ -4,7 +4,6 @@ function test(){
 }
 
 function rightFlip(){
-    console.log("fuck");
     roationDeg=Math.floor(Math.random() * 10);
     var root=document.documentElement;
     if(roationDeg<=2){
