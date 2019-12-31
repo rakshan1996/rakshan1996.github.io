@@ -1,18 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="./index.js"></script>
     </head>
     <body>
-        <div>
-
-            This will hold portfolio for Rakshan (Devil) Thapar.
-            It's still in Progress, meanwhile go nuts watching this awesome loader.
-        </div>
-        <div>
-            <span class="dot" id="dot1"></span>
-            <span class="dot" id="dot2"></span>
-            <span class="dot" id="dot3"></span>
-            <span class="dot" id="dot4"></span>
+        <div class="img-profile" >
+            <img class="profile" id="profile" usemap="#flipMap" src="./2019.jpg">
+            <map name="flipMap">
+                <area shape="circle" coords="225,150,75" onclick="rightFlip()">
+            </map>
         </div>
     </body>
 </html>

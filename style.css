@@ -1,74 +1,35 @@
+:root{
+    --rotationDeg:0deg;
+}
 body{
    background: #000;
+   overflow: hidden;
 }
 
-.dot{
-    height: 20px;
-    width: 20px;
+.profile{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    display: inline-block;
-    background-color: #bbb;
+    
 }
-h1{
-    left:50%;
-    background-color: #bbb;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-}
-div{
-    color: white;
+
+.img-profile{
+    width: fit-content;
+    height: fit-content;
     position: relative;
-    top:50%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-div{
-    text-align: center;
-    margin: 10px 0px;
+    box-shadow: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
 
 }
-#dot1{
-    position: relative;
+.rightFlip{
     animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
-    animation-timing-function: ease;
-    animation-direction: alternate;
-    animation-fill-mode: both;
+    animation-duration: 3s;
 }
-#dot2{
-    position: relative;
-    animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
-    animation-delay: 0.25s;
-    animation-timing-function: ease;
-    animation-direction: alternate;
-}
-#dot3{
-    position: relative;
-    animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
-    animation-timing-function: ease;
-    animation-delay: 0.50s;
-    animation-direction: alternate;
-}
-#dot4{
-    position: relative;
-    animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
-    animation-timing-function: ease;
-    animation-delay:0.75s ;
-    animation-direction: alternate;
-}
-@keyframes test {
-    0%   {background-color:rgb(255, 62, 48); left:0px; top:0px; transform: rotate3d(1,1,1,180deg); }
-    25%  {background-color:rgb(247, 181, 41);  top:-10px; }
-    50%  {background-color:rgb(23, 107, 239);  top:-5px;}
-    75%  {background-color:rgb(23, 156, 82); top:-2.5px;}
-    100% {background-color:rgb(255, 62, 48);  top:0px;}
+
+@keyframes test{
+    from{transform: rotateY(0deg)}
+    to{transform:rotateY(var(--rotationDeg))}
 }
