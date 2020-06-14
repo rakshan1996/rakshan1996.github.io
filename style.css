@@ -1,45 +1,23 @@
-:root{
-    --rotationDeg:0deg;
-}
 body{
-   background: #000;
-   overflow: hidden;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
 }
 
-.actionText{
-    text-align: center;
-    color: ghostwhite;
-}
-.profile{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    
-}
-
-.img-profile{
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    box-shadow: #fff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-
-}
-.rightFlip{
-    animation-name: rightFlip;
-    animation-duration: 5s;
-    animation-fill-mode: forwards
-}
-.leftFlip{
-    animation-name: leftFlip;
-    animation-duration: 3s;
-    animation-fill-mode: forwards
+h1{
+    font-family: cursive;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    color:whitesmoke;
+    text-shadow: 0 20px 5px rgba(255,255,255,0.5);
+    animation:floating 3s linear infinite;
+    animation-direction: alternate;
 }
 
-@keyframes rightFlip{
-    from{transform:rotateY(var(--rotationDeg))}
-    to{transform:rotateY(0deg);content: url(./2020.jpg)}
+@keyframes floating{
+    from { transform: rotate(5deg);}
+    to {transform: rotate(-5deg);}
 }
