@@ -1,9 +1,25 @@
-body{
+/* body{
     height:100vh;
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: #2b2b2b;
+} */
+body{
+    height: 100vh;
+}
+
+div{
+    height: 100%;
+}
+
+
+.container_welcomeContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #66FCF1;
+    
 }
 
 h1{
@@ -11,13 +27,7 @@ h1{
     font-size: 80px;
     line-height: 80px;
     letter-spacing: 2px;
-    color:whitesmoke;
+    /* color:whitesmoke; */
     text-shadow: 0 20px 5px rgba(255,255,255,0.5);
-    animation:floating 3s linear infinite;
-    animation-direction: alternate;
-}
-
-@keyframes floating{
-    from { transform: rotate(5deg);}
-    to {transform: rotate(-5deg);}
+    
 }
