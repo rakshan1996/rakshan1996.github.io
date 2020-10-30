@@ -7,17 +7,24 @@
 } */
 body{
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 div{
     height: 100%;
+    overflow: hidden;
 }
 
 
 .container_welcomeContent{
+   width: 100vw;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   position: fixed;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
     color: #66FCF1;
     
 }
@@ -28,6 +35,6 @@ h1{
     line-height: 80px;
     letter-spacing: 2px;
     /* color:whitesmoke; */
-    text-shadow: 0 20px 5px rgba(255,255,255,0.5);
+    text-shadow: 0 10px 5px #45A29E;
     
 }
