@@ -1,5 +1,5 @@
 *  {
-    font-family: 'Poppins' !important;
+    font-family: 'Poppins';
 }
 body{
     height: 100vh;
@@ -61,4 +61,50 @@ body{
 
 #myName {
     color: #FF64CB;
+}
+
+.socialMedia a{
+    text-decoration: none;
+}
+
+.socialMedia a:hover{
+    text-decoration: none;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+/* Twitter */
+.fa-twitter {
+  background:white ;
+  color: #55ACEE;
+}
+
+.fa-instagram {
+  background:white ;
+  color: #125688;
+}
+
+.fa-linkedin {
+  background: white ;
+  color: #007bb5;
+}
+
+.fa-discord {
+  background: white ;
+  color: #7991ff;
 }
