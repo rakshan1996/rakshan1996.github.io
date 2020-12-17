@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Twitter */
+.fa-twitter {
+  background: white;
+  color: #55ACEE !important;
+}
+
+.fa-instagram {
+  background: white;
+  color: #125688 !important;
+}
+
+.fa-linkedin {
+  background: white;
+  color: #007bb5 !important;
+}
+
+.fa-discord {
+  background: white;
+  color: #7991ff !important;
+}
+
+.nav-container {
+  background: #6700EE;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #0EC8BA;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0 1em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.social-header, .hero-design {
+  display: none;
+}
+
+.hero {
+  background: #6807E8;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.hero .content {
+  font-size: 4em;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+  color: #FF64CB;
+  font-size: 0.7em;
+  margin-top: -100px;
+}
+
+.meet span {
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+
+.meet p {
+  width: auto;
+  font-size: 1em;
+}
+
+section {
+  padding: 5em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: #6807E8;
+  opacity: 21%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  font-size: 3em;
+}
+
+.skills {
+  position: relative;
+  background: #FF64CB;
+  margin: 8.9em 0;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: #0EC8BA;
+  opacity: 60%;
+  top: -100px;
+  right: 0;
+  z-index: 2;
+}
+
+.skills-container ul li {
+  background: white;
+  padding: 3em;
+  border-radius: 2em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.icon-container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+}
+
+.icon-container i {
+  margin-top: 2em !important;
+  margin-bottom: 0.5em !important;
+  margin-left: 0 !important;
+}
+
+.skill-title {
+  text-transform: uppercase;
+  font-size: 3em !important;
+  margin-bottom: 1em;
+}
+
+.skill-desc {
+  margin-bottom: 3em;
+}
+/*# sourceMappingURL=main.css.map */
