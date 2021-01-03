@@ -266,7 +266,7 @@ section {
   header .logo {
     color: #0EC8BA;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
     padding: 0 1em;
   }
   header ul {
@@ -281,7 +281,7 @@ section {
     display: block;
     padding: 0 1em;
     margin: 0;
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
