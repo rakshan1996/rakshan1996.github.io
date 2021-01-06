@@ -207,7 +207,7 @@ section {
     display: grid;
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
+    grid-gap: 0.5em;
   }
   .subtitle {
     top: 70px;
@@ -215,7 +215,7 @@ section {
     letter-spacing: 0.1em;
   }
   .skill-title {
-    font-size: 0.8em !important;
+    font-size: 1.2em !important;
   }
   .skill-desc {
     font-size: 0.8em;
@@ -271,6 +271,10 @@ section {
     padding: 0 1em;
     margin: 0;
     font-size: 1.2em;
+  }
+  .skills-container ul li {
+    padding: 3em 0.3em;
+    width: 14em;
   }
 }
 
