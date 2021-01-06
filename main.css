@@ -66,13 +66,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 header .logo {
   color: #0EC8BA;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 0.9em;
   padding: 0 1em;
 }
 
@@ -83,13 +83,14 @@ header ul {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-top: 3px;
 }
 
 header ul a {
   display: block;
   padding: 0 1em;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 0.7em;
 }
 
 .social-header, .hero-design {
@@ -108,7 +109,7 @@ header ul a {
 }
 
 .hero .content {
-  font-size: 4em;
+  font-size: 1em;
 }
 
 .meet {
@@ -120,7 +121,6 @@ header ul a {
   font-weight: bold;
   color: #FF64CB;
   font-size: 0.7em;
-  margin-top: -100px;
 }
 
 .meet span {
@@ -158,11 +158,10 @@ section {
 .subtitle {
   text-transform: uppercase;
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 100px;
   font-weight: 500;
-  letter-spacing: .1em;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .skills {
@@ -187,7 +186,7 @@ section {
 
 .skill-title {
   text-transform: uppercase;
-  font-size: 3em !important;
+  font-size: 1em !important;
   margin-bottom: 1em;
 }
 
