@@ -211,6 +211,8 @@ section {
   }
   .subtitle {
     top: 70px;
+    font-size: 3em;
+    letter-spacing: 0.1em;
   }
   .skill-title {
     font-size: 0.8em !important;
@@ -234,15 +236,12 @@ section {
     margin-top: 10em;
   }
   .hero .content {
-    font-size: 2em;
-  }
-  .hero .content h1 {
-    margin-left: -120px;
+    font-size: 3em;
   }
   .hero .meet {
     font-size: 0.5em;
-    margin-top: 0;
-    margin-left: 60px;
+    margin-top: -100px;
+    margin-left: 45px;
   }
   header {
     display: -webkit-box;
@@ -256,7 +255,7 @@ section {
   header .logo {
     color: #0EC8BA;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0 1em;
   }
   header ul {
@@ -271,7 +270,7 @@ section {
     display: block;
     padding: 0 1em;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
